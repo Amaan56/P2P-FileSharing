@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #FFCC00;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header {
+  background-color: #111;
+  padding: 0;
+}
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+
+body{
+	background-color: #ffffff;
+}
+
+.loader{
+	position: relative;
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #2ecc71;
+	border-radius: 50%;
+	width: 130px;
+	height: 130px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo{
+	text-align: center;
+	margin: 20px;
+	font-weight:bold;
+	text-shadow:1px 1px grey;
+}
+
+.modalProgress{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent{
+	text-align: center;
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 19px;
+	border: 1px solid #888;
+	width: fit-content;
+}
+
+.topnav{
+	width:90%;
+	text-transform: uppercase;
+	margin:0 auto;
+	text-align:center;
+	background-color: #2ecc71;
+	overflow: auto;
+}
+.topnav a{
+	float: left;
+	display:  block;
+	color: #f3f3f3;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover{
+	background-color: #ddd;
+	color: black;
+}
+.topnav .icon{
+	display: none;
+}
+
+.topnav .flr{
+	float: right;
+}
+
+@media screen and (max-width: 600px){
+	.topnav a:not(:first-child){
+		display: none;	
+	}
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px){
+	.topnav.responsive{
+		position: relative;
+	}
+	.topnav.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+
+.button{
+	border: 1px;
+	color: white;
+	background-color: #27ae60;
+	padding: 15px 32px;
+	margin-right:10px;
+	text-align: center;
+	text-decoration: bold italic;
+	font-family: sans-serif;
+	font-size: 16px;
+	display: inline-block;
+}
+.button:hover{
+	box-shadow: 3px 3px 7px grey;
+	opacity: 0.7;
+}
+
+@media screen and (max-width: 600px){
+	.shadowStyle{
+		clear:  both;
+		overflow: auto;
+		background: white;
+		padding: 10px;
+		text-align: center;
+		margin: 0 auto;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		transition: 0.3s;
+	}
+}
+
+.shadowStyle{
+	overflow: auto;
+	background: white;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+
+.mainInfo{
+  overflow:auto;
+  border-radius: 10px;
+  padding: 30px;
+	background: white;
+	background-size:cover;
+	width:90%;
+	text-align: left;
+	margin-bottom: -11%;
+	margin:0 auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+.textArea{
+	font-family: sans-serif;
+
+	color: #34495e;
+	display:inline;
+	text-align:justify;
+}
+.foot{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 10%;
+	background-color: #2ecc71;
+	color: white;
+	text-align: center;
+}
+.content{
+	margin-top:30px;
+	position:relative;
+}
+
+p{
+	font-size: 19px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.tA{
+	width: 100%;
+    height: 150px;
+    clear: both;
+    resize: none;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
